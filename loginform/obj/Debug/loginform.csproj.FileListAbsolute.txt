@@ -8,3 +8,15 @@ D:\C#\loginform\loginform\obj\Debug\loginform.csproj.GenerateResource.cache
 D:\C#\loginform\loginform\obj\Debug\loginform.csproj.CoreCompileInputs.cache
 D:\C#\loginform\loginform\obj\Debug\loginform.exe
 D:\C#\loginform\loginform\obj\Debug\loginform.pdb
+C:\Users\admin\Source\Repos\project\loginform\bin\Debug\loginform.exe.config
+C:\Users\admin\Source\Repos\project\loginform\bin\Debug\loginform.exe
+C:\Users\admin\Source\Repos\project\loginform\bin\Debug\loginform.pdb
+C:\Users\admin\Source\Repos\project\loginform\obj\Debug\loginform.csproj.AssemblyReference.cache
+C:\Users\admin\Source\Repos\project\loginform\obj\Debug\loginform.Properties.Resources.resources
+C:\Users\admin\Source\Repos\project\loginform\obj\Debug\loginform.csproj.GenerateResource.cache
+C:\Users\admin\Source\Repos\project\loginform\obj\Debug\loginform.csproj.CoreCompileInputs.cache
+C:\Users\admin\Source\Repos\project\loginform\obj\Debug\loginform.exe
+C:\Users\admin\Source\Repos\project\loginform\obj\Debug\loginform.pdb
+C:\Users\admin\Source\Repos\project\loginform\obj\Debug\loginform.signup.resources
+C:\Users\admin\Source\Repos\project\loginform\obj\Debug\loginform.login.resources
+C:\Users\admin\source\repos\project\loginform\obj\Debug\loginform.ThongBaoTaoTaiKhoanThanhCong.resources
