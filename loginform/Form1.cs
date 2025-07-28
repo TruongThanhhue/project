@@ -11,13 +11,19 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace loginform
 {
-    public partial class Form1 : Form
+    public partial class Login : Form
     {
-        public Form1()
+        private Signup signup;
+
+        public Login()
         {
             InitializeComponent();
         }
-
+        public Login(Signup sign)
+        {
+            InitializeComponent();
+            signup = sign;
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
             this.ActiveControl = user;
@@ -86,7 +92,7 @@ namespace loginform
 
         private void llbsignin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            new signup().Show();
+            new Signup().Show();
             this.Hide();
         }
 
