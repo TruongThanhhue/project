@@ -60,11 +60,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recoverpass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recoverpass.Designer.cs">
+      <DependentUpon>Recoverpass.cs</DependentUpon>
+    </Compile>
     <Compile Include="signup.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="signup.Designer.cs">
       <DependentUpon>signup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongBaoDatLaiMatKhauThanhCong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongBaoDatLaiMatKhauThanhCong.Designer.cs">
+      <DependentUpon>ThongBaoDatLaiMatKhauThanhCong.cs</DependentUpon>
     </Compile>
     <Compile Include="ThongBaoTaoTaiKhoanThanhCong.cs">
       <SubType>Form</SubType>
@@ -72,6 +84,9 @@
     <Compile Include="ThongBaoTaoTaiKhoanThanhCong.Designer.cs">
       <DependentUpon>ThongBaoTaoTaiKhoanThanhCong.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forgotpass.resx">
+      <DependentUpon>Forgotpass.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -85,8 +100,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Recoverpass.resx">
+      <DependentUpon>Recoverpass.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="signup.resx">
       <DependentUpon>signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongBaoDatLaiMatKhauThanhCong.resx">
+      <DependentUpon>ThongBaoDatLaiMatKhauThanhCong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ThongBaoTaoTaiKhoanThanhCong.resx">
       <DependentUpon>ThongBaoTaoTaiKhoanThanhCong.cs</DependentUpon>

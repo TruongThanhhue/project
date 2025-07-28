@@ -20,3 +20,6 @@ C:\Users\admin\Source\Repos\project\loginform\obj\Debug\loginform.pdb
 C:\Users\admin\Source\Repos\project\loginform\obj\Debug\loginform.signup.resources
 C:\Users\admin\Source\Repos\project\loginform\obj\Debug\loginform.login.resources
 C:\Users\admin\source\repos\project\loginform\obj\Debug\loginform.ThongBaoTaoTaiKhoanThanhCong.resources
+C:\Users\admin\Source\Repos\project\loginform\obj\Debug\loginform.Forgotpass.resources
+C:\Users\admin\Source\Repos\project\loginform\obj\Debug\loginform.Recoverpass.resources
+C:\Users\admin\Source\Repos\project\loginform\obj\Debug\loginform.ThongBaoDatLaiMatKhauThanhCong.resources
