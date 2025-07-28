@@ -1,0 +1,10 @@
+D:\C#\loginform\loginform\bin\Debug\loginform.exe.config
+D:\C#\loginform\loginform\bin\Debug\loginform.exe
+D:\C#\loginform\loginform\bin\Debug\loginform.pdb
+D:\C#\loginform\loginform\obj\Debug\loginform.csproj.AssemblyReference.cache
+D:\C#\loginform\loginform\obj\Debug\loginform.Form1.resources
+D:\C#\loginform\loginform\obj\Debug\loginform.Properties.Resources.resources
+D:\C#\loginform\loginform\obj\Debug\loginform.csproj.GenerateResource.cache
+D:\C#\loginform\loginform\obj\Debug\loginform.csproj.CoreCompileInputs.cache
+D:\C#\loginform\loginform\obj\Debug\loginform.exe
+D:\C#\loginform\loginform\obj\Debug\loginform.pdb

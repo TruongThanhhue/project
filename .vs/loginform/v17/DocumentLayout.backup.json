@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\C#\\loginform\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8258E0B8-243F-4B6B-80F2-BAE456619EF3}|loginform\\loginform.csproj|d:\\c#\\loginform\\loginform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8258E0B8-243F-4B6B-80F2-BAE456619EF3}|loginform\\loginform.csproj|solutionrelative:loginform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8258E0B8-243F-4B6B-80F2-BAE456619EF3}|loginform\\loginform.csproj|D:\\C#\\loginform\\loginform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8258E0B8-243F-4B6B-80F2-BAE456619EF3}|loginform\\loginform.csproj|solutionrelative:loginform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8258E0B8-243F-4B6B-80F2-BAE456619EF3}|loginform\\loginform.csproj|d:\\c#\\loginform\\loginform\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8258E0B8-243F-4B6B-80F2-BAE456619EF3}|loginform\\loginform.csproj|solutionrelative:loginform\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8258E0B8-243F-4B6B-80F2-BAE456619EF3}|loginform\\loginform.csproj|D:\\C#\\loginform\\loginform\\forgotpass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8258E0B8-243F-4B6B-80F2-BAE456619EF3}|loginform\\loginform.csproj|solutionrelative:loginform\\forgotpass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "signup.cs [Design]",
+              "DocumentMoniker": "D:\\C#\\loginform\\loginform\\signup.cs",
+              "RelativeDocumentMoniker": "loginform\\signup.cs",
+              "ToolTip": "D:\\C#\\loginform\\loginform\\signup.cs [Design]",
+              "RelativeToolTip": "loginform\\signup.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-27T18:27:45.664Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Forgotpass.cs [Design]",
+              "DocumentMoniker": "D:\\C#\\loginform\\loginform\\Forgotpass.cs",
+              "RelativeDocumentMoniker": "loginform\\Forgotpass.cs",
+              "ToolTip": "D:\\C#\\loginform\\loginform\\Forgotpass.cs [Design]",
+              "RelativeToolTip": "loginform\\Forgotpass.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-27T16:48:48.444Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\C#\\loginform\\loginform\\Form1.cs",
+              "RelativeDocumentMoniker": "loginform\\Form1.cs",
+              "ToolTip": "D:\\C#\\loginform\\loginform\\Form1.cs",
+              "RelativeToolTip": "loginform\\Form1.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAmwFkAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T08:43:32.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\C#\\loginform\\loginform\\Form1.cs",
+              "RelativeDocumentMoniker": "loginform\\Form1.cs",
+              "ToolTip": "D:\\C#\\loginform\\loginform\\Form1.cs [Design]",
+              "RelativeToolTip": "loginform\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T08:42:22.607Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
