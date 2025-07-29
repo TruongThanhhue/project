@@ -147,5 +147,27 @@ namespace loginform
             new Login().Show();
             this.Close();
         }
+
+        private void Tmanv_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void Tmanv_Enter(object sender, EventArgs e)
+        {
+            if (Tmanv.Text == "Mã nhân viên")
+            {
+                Tmanv.Text = "";
+                Tmanv.ForeColor = Color.Black;
+            }
+        }
+
+        private void Tmanv_Leave(object sender, EventArgs e)
+        {
+            if (Tmanv.Text == "")
+            {
+                Tmanv.Text = "Mã nhân viên";
+                Tmanv.ForeColor = Color.Gray;
+            }
+        }
     }
 }
