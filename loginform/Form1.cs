@@ -67,7 +67,6 @@ namespace loginform
             {
                 Pass.Text = "";
                 Pass.ForeColor = Color.Black;
-                Pass.UseSystemPasswordChar = true; // Hiển thị mật khẩu dưới dạng dấu chấm
             }
         }
 
@@ -77,6 +76,7 @@ namespace loginform
             {
                 Pass.Text = "Mật khẩu";
                 Pass.ForeColor = Color.Gray;
+                Pass.UseSystemPasswordChar = false;
             }
         }
 

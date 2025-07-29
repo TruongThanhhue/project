@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\admin\\source\\repos\\project\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8258E0B8-243F-4B6B-80F2-BAE456619EF3}|loginform\\loginform.csproj|C:\\Users\\admin\\source\\repos\\project\\loginform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8258E0B8-243F-4B6B-80F2-BAE456619EF3}|loginform\\loginform.csproj|solutionrelative:loginform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8258E0B8-243F-4B6B-80F2-BAE456619EF3}|loginform\\loginform.csproj|C:\\Users\\admin\\source\\repos\\project\\loginform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8258E0B8-243F-4B6B-80F2-BAE456619EF3}|loginform\\loginform.csproj|solutionrelative:loginform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8258E0B8-243F-4B6B-80F2-BAE456619EF3}|loginform\\loginform.csproj|C:\\Users\\admin\\source\\repos\\project\\loginform\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{8258E0B8-243F-4B6B-80F2-BAE456619EF3}|loginform\\loginform.csproj|solutionrelative:loginform\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -13,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8258E0B8-243F-4B6B-80F2-BAE456619EF3}|loginform\\loginform.csproj|C:\\Users\\admin\\source\\repos\\project\\loginform\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8258E0B8-243F-4B6B-80F2-BAE456619EF3}|loginform\\loginform.csproj|solutionrelative:loginform\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8258E0B8-243F-4B6B-80F2-BAE456619EF3}|loginform\\loginform.csproj|C:\\Users\\admin\\source\\repos\\project\\loginform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8258E0B8-243F-4B6B-80F2-BAE456619EF3}|loginform\\loginform.csproj|solutionrelative:loginform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8258E0B8-243F-4B6B-80F2-BAE456619EF3}|loginform\\loginform.csproj|C:\\Users\\admin\\source\\repos\\project\\loginform\\thongbaodatlaimatkhauthanhcong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -37,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8258E0B8-243F-4B6B-80F2-BAE456619EF3}|loginform\\loginform.csproj|C:\\Users\\admin\\source\\repos\\project\\loginform\\thongbaodatlaimatkhauthanhcong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8258E0B8-243F-4B6B-80F2-BAE456619EF3}|loginform\\loginform.csproj|solutionrelative:loginform\\thongbaodatlaimatkhauthanhcong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8258E0B8-243F-4B6B-80F2-BAE456619EF3}|loginform\\loginform.csproj|C:\\Users\\admin\\source\\repos\\project\\loginform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8258E0B8-243F-4B6B-80F2-BAE456619EF3}|loginform\\loginform.csproj|solutionrelative:loginform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8258E0B8-243F-4B6B-80F2-BAE456619EF3}|loginform\\loginform.csproj|C:\\Users\\admin\\source\\repos\\project\\loginform\\recoverpass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -66,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Document",
@@ -122,7 +122,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "signup.cs [Design]",
               "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\project\\loginform\\signup.cs",
               "RelativeDocumentMoniker": "loginform\\signup.cs",
@@ -135,7 +135,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "signup.cs",
               "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\project\\loginform\\signup.cs",
               "RelativeDocumentMoniker": "loginform\\signup.cs",
@@ -149,7 +149,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "signup.Designer.cs",
               "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\project\\loginform\\signup.Designer.cs",
               "RelativeDocumentMoniker": "loginform\\signup.Designer.cs",
@@ -167,7 +167,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "ThongBaoTaoTaiKhoanThanhCong.cs [Design]",
               "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\project\\loginform\\ThongBaoTaoTaiKhoanThanhCong.cs",
               "RelativeDocumentMoniker": "loginform\\ThongBaoTaoTaiKhoanThanhCong.cs",
@@ -179,7 +179,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "ThongBaoTaoTaiKhoanThanhCong.cs",
               "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\project\\loginform\\ThongBaoTaoTaiKhoanThanhCong.cs",
               "RelativeDocumentMoniker": "loginform\\ThongBaoTaoTaiKhoanThanhCong.cs",
@@ -192,7 +192,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "ThongBaoDatLaiMatKhauThanhCong.cs",
               "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\project\\loginform\\ThongBaoDatLaiMatKhauThanhCong.cs",
               "RelativeDocumentMoniker": "loginform\\ThongBaoDatLaiMatKhauThanhCong.cs",
@@ -205,7 +205,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "ThongBaoDatLaiMatKhauThanhCong.cs [Design]",
               "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\project\\loginform\\ThongBaoDatLaiMatKhauThanhCong.cs",
               "RelativeDocumentMoniker": "loginform\\ThongBaoDatLaiMatKhauThanhCong.cs",
@@ -217,7 +217,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Forgotpass.Designer.cs",
               "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\project\\loginform\\Forgotpass.Designer.cs",
               "RelativeDocumentMoniker": "loginform\\Forgotpass.Designer.cs",
@@ -230,7 +230,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\project\\loginform\\Form1.cs",
               "RelativeDocumentMoniker": "loginform\\Form1.cs",
@@ -242,13 +242,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\project\\loginform\\Form1.cs",
               "RelativeDocumentMoniker": "loginform\\Form1.cs",
               "ToolTip": "C:\\Users\\admin\\source\\repos\\project\\loginform\\Form1.cs",
               "RelativeToolTip": "loginform\\Form1.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAYwBwAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAUwGYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-23T08:43:32.08Z",
               "EditorCaption": ""
