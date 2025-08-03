@@ -1,7 +1,70 @@
-.vs/
-bin/
-obj/
+## Ignore Visual Studio temporary files, build results, and
+## user-specific files
+
+# Build results
+[Bb]in/
+[Oo]bj/
+
+# User-specific files
 *.user
 *.suo
-*.cache
+*.userosscache
+*.sln.docstates
+
+# Auto-generated designer files
+*_i.c
+*_p.c
+*.cachefile
+
+# Windows image cache
+Thumbs.db
+ehthumbs.db
+
+# Folder config
+.vs/
+.vscode/
+
+# Debug and release folders
+x64/
+x86/
 *.log
+*.tlog
+
+# DotCover
+.idea/
+
+# Backup & temp files
+*.bak
+*.tmp
+*.temp
+*.old
+
+# Others
+_ReSharper*/
+*.resharper
+*.dbmdl
+*.sdf
+*.sqlite
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+
+# Publish output
+*.publishsettings
+
+# Local test results
+TestResults/
+
+# Rider project files
+.idea/
+
+# Entity Framework
+Migrations/
+
+# Dotnet CLI
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
