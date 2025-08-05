@@ -11,25 +11,28 @@ using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Configuration;
 
-string connectionString = ConfigurationManager.ConnectionStrings["DB"].ConnectionString;
-SqlConnection conn = new SqlConnection(connectionString);
-
 namespace loginform
 {
     public partial class Login : Form
     {
+        private string connectionString;
+        private SqlConnection conn;
         private Signup signup;
 
         public Login()
         {
             InitializeComponent();
+            connectionString = ConfigurationManager.ConnectionStrings["DB"].ConnectionString;
+            conn = new SqlConnection(connectionString);
         }
         public Login(Signup sign)
         {
             InitializeComponent();
             signup = sign;
+            connectionString = ConfigurationManager.ConnectionStrings["DB"].ConnectionString;
+            conn = new SqlConnection(connectionString);
         }
-        private void Form1_Load(object sender, EventArgs e)
+        private void Login_Load(object sender, EventArgs e)
         {
             this.ActiveControl = user;
         }
@@ -92,7 +95,44 @@ namespace loginform
 
         private void button1_Click(object sender, EventArgs e)
         {
+            string username = user.Text.Trim();
+            string password = Pass.Text.Trim();
 
+            if (username == "" || password == "" || username == "Email hoặc số điện thoại" || password == "Mật khẩu")
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            try
+            {
+                conn.Open();
+                string query = "SELECT COUNT(*) FROM TAIKHOAN WHERE TENDN = @username AND MK = @password";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@username", username);
+                cmd.Parameters.AddWithValue("@password", password);
+
+                int count = (int)cmd.ExecuteScalar();
+                if (count > 0)
+                {
+                    MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    // Mở form chính ở đây nếu có
+                    // this.Hide();
+                    // new MainForm().Show();
+                }
+                else
+                {
+                    MessageBox.Show("Sai tài khoản hoặc mật khẩu!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi kết nối: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                conn.Close();
+            }
         }
 
         private void llbsignin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

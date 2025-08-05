@@ -228,7 +228,7 @@
             Name = "Login";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Salary calculation";
-            Load += Form1_Load;
+            Load += Login_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
