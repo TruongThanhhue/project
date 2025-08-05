@@ -23,3 +23,5 @@ C:\Users\admin\source\repos\project\loginform\obj\Debug\loginform.ThongBaoTaoTai
 C:\Users\admin\Source\Repos\project\loginform\obj\Debug\loginform.Forgotpass.resources
 C:\Users\admin\Source\Repos\project\loginform\obj\Debug\loginform.Recoverpass.resources
 C:\Users\admin\Source\Repos\project\loginform\obj\Debug\loginform.ThongBaoDatLaiMatKhauThanhCong.resources
+D:\Hệ thống tính lương\loginform\obj\Debug\loginform.exe
+D:\Hệ thống tính lương\loginform\obj\Debug\loginform.pdb

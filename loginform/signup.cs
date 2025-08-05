@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Data.SqlClient;
 
 namespace loginform
 {
@@ -15,6 +16,7 @@ namespace loginform
     {
         private Login login;
         private ThongBaoTaoTaiKhoanThanhCong thongBaoTaoTaiKhoanThanhCong;
+        private string connectionString = "DB";
         public Signup()
         {
             InitializeComponent();
@@ -129,18 +131,97 @@ namespace loginform
 
         private void btsignup_Click(object sender, EventArgs e)
         {
-            //if() tạo đc
-            //{
-                this.Hide();
-                new Login().Show();
-                new ThongBaoTaoTaiKhoanThanhCong().Show();
-                this.Close();
-            //}
-            //else ko tạo đc
-                
-            
-        }
+            string tenDN = Tuser.Text;
+            string matKhau = Tpass.Text;
+            string nhapLaiMK = Tpass2.Text;
+            string maNV = Tmanv.Text;
 
+            // Kiểm tra các trường nhập liệu
+            if (string.IsNullOrEmpty(tenDN) || string.IsNullOrEmpty(matKhau) || string.IsNullOrEmpty(nhapLaiMK) || string.IsNullOrEmpty(maNV) ||
+                tenDN == "Email hoặc số điện thoại" || matKhau == "Mật khẩu" || nhapLaiMK == "Nhập lại mật khẩu" || maNV == "Mã nhân viên")
+            {
+                MessageBox.Show("Vui lòng điền đầy đủ tất cả các thông tin.", "Lỗi đăng ký", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (matKhau != nhapLaiMK)
+            {
+                MessageBox.Show("Mật khẩu và xác nhận mật khẩu không khớp.", "Lỗi đăng ký", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Kiểm tra các ràng buộc khác (ví dụ: độ dài mật khẩu, định dạng email,...)
+            if (matKhau.Length < 6)
+            {
+                MessageBox.Show("Mật khẩu phải có ít nhất 6 ký tự.", "Lỗi đăng ký", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    connection.Open();
+
+                    // Bước 1: Kiểm tra xem Mã nhân viên (MANV) có tồn tại trong bảng NHANVIEN không
+                    string checkMaNVQuery = "SELECT COUNT(*) FROM NHANVIEN WHERE MANV = @MaNV";
+                    using (SqlCommand checkMaNVCommand = new SqlCommand(checkMaNVQuery, connection))
+                    {
+                        checkMaNVCommand.Parameters.AddWithValue("@MaNV", maNV);
+                        int count = (int)checkMaNVCommand.ExecuteScalar();
+                        if (count == 0)
+                        {
+                            MessageBox.Show("Mã nhân viên không tồn tại trong hệ thống.", "Lỗi đăng ký", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            return;
+                        }
+                    }
+
+                    // Bước 2: Kiểm tra xem Tên đăng nhập (TENDN) đã tồn tại trong bảng TAIKHOAN chưa
+                    string checkTenDNQuery = "SELECT COUNT(*) FROM TAIKHOAN WHERE TENDN = @TenDN";
+                    using (SqlCommand checkTenDNCommand = new SqlCommand(checkTenDNQuery, connection))
+                    {
+                        checkTenDNCommand.Parameters.AddWithValue("@TenDN", tenDN);
+                        int count = (int)checkTenDNCommand.ExecuteScalar();
+                        if (count > 0)
+                        {
+                            MessageBox.Show("Tên đăng nhập này đã tồn tại. Vui lòng chọn tên khác.", "Lỗi đăng ký", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            return;
+                        }
+                    }
+
+                    // Bước 3: Nếu mọi thứ hợp lệ, tiến hành thêm tài khoản mới
+                    // Lưu ý: Nên mã hóa mật khẩu trước khi lưu vào database
+                    string insertQuery = "INSERT INTO TAIKHOAN (TENDN, MK, MANV) VALUES (@TenDN, @MatKhau, @MaNV)";
+                    using (SqlCommand insertCommand = new SqlCommand(insertQuery, connection))
+                    {
+                        insertCommand.Parameters.AddWithValue("@TenDN", tenDN);
+                        insertCommand.Parameters.AddWithValue("@MatKhau", matKhau);
+                        insertCommand.Parameters.AddWithValue("@MaNV", maNV);
+                        int rowsAffected = insertCommand.ExecuteNonQuery();
+                        if (rowsAffected > 0)
+                        {
+                            this.Hide();
+                            new Login().Show();
+                            new ThongBaoTaoTaiKhoanThanhCong().Show();
+                            this.Close();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Đã xảy ra lỗi khi tạo tài khoản. Vui lòng thử lại.", "Lỗi đăng ký", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+
+                }
+                catch (SqlException ex)
+                {
+                    MessageBox.Show("Lỗi Database: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
         private void llbreturn_Click(object sender, EventArgs e)
         {
             this.Hide();
